@@ -1,0 +1,27 @@
+</body>
+<script type='text/javascript'>
+  var addNotesBtn = document.getElementById('add-notes');
+  var addNotesModal = document.getElementById('addnotesmodal');
+  var closeModal = document.getElementById('close-modal');
+  var closeModal2 = document.getElementById('close-modal-2');
+  var addBtn = document.getElementById('btn-n-add');
+  var saveBtn = document.getElementById('btn-n-save');
+
+  var updateNotesModal = document.getElementById('updatenotesmodal');
+
+  addNotesBtn.addEventListener('click', function() {
+    addNotesModal.style.display = 'block';
+    addBtn.style.display = 'block';
+    saveBtn.style.display = 'none';
+  });
+
+  closeModal.addEventListener('click', function() {
+    addNotesModal.style.display = 'none';
+  });
+
+  closeModal2.addEventListener('click', function() {
+    updateNotesModal.style.display = 'none';
+  });
+
+</script>
+</html>
